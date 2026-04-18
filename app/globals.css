@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
-
 :root {
   --background: #F9F9F9;
   --foreground: #1A1C1C;
@@ -48,37 +46,6 @@ body {
   @apply sticky top-0 z-50 bg-white/70 backdrop-blur-[20px] transition-all duration-500;
 }
 
-.retail-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-}
-
-@media (min-width: 768px) {
-  .retail-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .retail-grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
-}
-
 .product-card {
-  @apply aspect-[3/4] bg-surface-lowest overflow-hidden transition-all duration-300;
-}
-
-.badge {
-  @apply absolute px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider;
-}
-
-.badge-sale {
-  @apply bg-accent-pink text-white left-0 top-2;
-}
-
-.badge-new {
-  @apply bg-primary-container text-white right-0 top-2;
+  @apply aspect-[4/5] bg-surface-lowest overflow-hidden transition-all duration-300;
 }
