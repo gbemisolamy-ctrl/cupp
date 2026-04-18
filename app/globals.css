@@ -3,17 +3,19 @@
 @import "tailwindcss";
 
 :root {
-  --background: #FFFFFF;
-  --foreground: #101111;
-  --primary: #101111;
-  --primary-container: #FF5400; /* Vibrant Retail CTA */
-  --secondary: #6B7280;
-  --secondary-container: #F3F4F6;
-  --surface-low: #F9FAFB;
+  --background: #F9F9F9;
+  --foreground: #1A1C1C;
+  --primary: #735C00;
+  --primary-container: #D4AF37;
+  --on-primary-container: #554300;
+  --secondary: #5F5E5E;
+  --secondary-container: #E2DFDE;
+  --surface: #F9F9F9;
+  --surface-low: #F3F3F4;
   --surface-lowest: #FFFFFF;
-  --outline: #E5E7EB;
-  --outline-variant: #D1D5DB;
-  --accent-pink: #FF0055; /* Shein-style accent */
+  --surface-highest: #E2E2E2;
+  --outline: #7F7663;
+  --outline-variant: #D0C5AF;
 }
 
 @theme inline {
@@ -21,14 +23,16 @@
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
   --color-primary-container: var(--primary-container);
+  --color-on-primary-container: var(--on-primary-container);
   --color-secondary: var(--secondary);
   --color-secondary-container: var(--secondary-container);
+  --color-surface: var(--surface);
   --color-surface-low: var(--surface-low);
   --color-surface-lowest: var(--surface-lowest);
+  --color-surface-highest: var(--surface-highest);
   --color-outline: var(--outline);
   --color-outline-variant: var(--outline-variant);
-  --color-accent-pink: var(--accent-pink);
-  
+
   --font-serif: var(--font-noto-serif), serif;
   --font-sans: var(--font-manrope), sans-serif;
 }
@@ -41,7 +45,7 @@ body {
 }
 
 .glass-nav {
-  @apply sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-outline;
+  @apply sticky top-0 z-50 bg-white/70 backdrop-blur-[20px] transition-all duration-500;
 }
 
 .retail-grid {
