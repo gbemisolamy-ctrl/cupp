@@ -63,7 +63,7 @@ export default function Home() {
         <div className="lg:col-span-5 flex flex-col items-start z-20 mt-12 lg:mt-0">
           <span className="text-[11px] font-bold uppercase tracking-[0.5em] text-primary mb-6">Edition 01 / Sourced Global</span>
           <h1 className="font-serif text-6xl lg:text-8xl text-foreground leading-[1] mb-8 tracking-tighter">
-            The <span className="italic block mt-2 text-primary">Cuppy</span> Atelier
+            CUPPY <span className="italic block mt-2 text-primary">HAIR</span>
           </h1>
           <p className="text-sm lg:text-base text-secondary font-medium leading-relaxed max-w-sm mb-12 uppercase tracking-wide">
             Curating the world's most exquisite human hair collections. No grids, just pure editorial curation.
